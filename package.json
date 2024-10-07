@@ -1,0 +1,34 @@
+{
+  "name": "docker-challenge-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "prod": "node ./dist/index.js",
+    "dev": "concurrently \"tsc --watch\" \"nodemon -q ./dist/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "WP",
+    "word",
+    "press",
+    "translation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-yields": "^1.1.2",
+    "http-status": "^1.7.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.7",
+    "typescript": "^5.6.2"
+  }
+}
